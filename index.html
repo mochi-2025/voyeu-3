@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dành Tặng Em, Người Vợ Tuyệt Vời Của Anh ❤️</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        rose: '#ff6b9d',
+                        blush: '#ffeaa7',
+                        lavender: '#a29bfe',
+                        peach: '#fd79a8'
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'heart-beat': 'heartBeat 1.5s ease-in-out infinite',
+                        'fade-in-up': 'fadeInUp 1s ease-out',
+                        'slide-in-left': 'slideInLeft 0.8s ease-out',
+                        'slide-in-right': 'slideInRight 0.8s ease-out'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+        
+        .font-dancing { font-family: 'Dancing Script', cursive; }
+        .font-poppins { font-family: 'Poppins', sans-serif; }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        @keyframes heartBeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+        
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes slideInLeft {
+            from { opacity: 0; transform: translateX(-100px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        
+        @keyframes slideInRight {
+            from { opacity: 0; transform: translateX(100px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        
+        @keyframes typewriter {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        
+        @keyframes blink {
+            0%, 50% { border-color: transparent; }
+            51%, 100% { border-color: white; }
+        }
+        
+        @keyframes sparkle {
+            0%, 100% { opacity: 0; transform: scale(0); }
+            50% { opacity: 1; transform: scale(1); }
+        }
+        
+        @keyframes pulse-glow {
+            0%, 100% { box-shadow: 0 0 20px rgba(255, 107, 157, 0.5); }
+            50% { box-shadow: 0 0 40px rgba(255, 107, 157, 0.8), 0 0 60px rgba(162, 155, 254, 0.6); }
+        }
+        
+        @keyframes rotate-slow {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        @keyframes zoom-in-out {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+        
+        @keyframes slideInUp {
+            from { opacity: 0; transform: translateY(60px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes slideInDown {
+            from { opacity: 0; transform: translateY(-60px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes scaleIn {
+            from { opacity: 0; transform: scale(0.8); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        
+        @keyframes rotateIn {
+            from { opacity: 0; transform: rotate(-180deg) scale(0.5); }
+            to { opacity: 1; transform: rotate(0deg) scale(1); }
+        }
+        
+        @keyframes bounceIn {
+            0% { opacity: 0; transform: scale(0.3); }
+            50% { opacity: 1; transform: scale(1.05); }
+            70% { transform: scale(0.9); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+        
+        @keyframes flipIn {
+            from { opacity: 0; transform: perspective(400px) rotateY(90deg); }
+            to { opacity: 1; transform: perspective(400px) rotateY(0deg); }
+        }
+        
+        .animate-slide-up { animation: slideInUp 0.8s ease-out both; }
+        .animate-slide-down { animation: slideInDown 0.8s ease-out both; }
+        .animate-scale-in { animation: scaleIn 0.6s ease-out both; }
+        .animate-rotate-in { animation: rotateIn 0.8s ease-out both; }
+        .animate-bounce-in { animation: bounceIn 0.8s ease-out both; }
+        .animate-flip-in { animation: flipIn 0.6s ease-out both; }
+        
+        .stagger-1 { animation-delay: 0.1s; }
+        .stagger-2 { animation-delay: 0.2s; }
+        .stagger-3 { animation-delay: 0.3s; }
+        .stagger-4 { animation-delay: 0.4s; }
+        .stagger-5 { animation-delay: 0.5s; }
+        .stagger-6 { animation-delay: 0.6s; }
+        .stagger-7 { animation-delay: 0.7s; }
+        .stagger-8 { animation-delay: 0.8s; }
+        
+        .image-placeholder {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .image-placeholder::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(255,255,255,0.1), rgba(255,255,255,0.3));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .image-placeholder:hover::before {
+            opacity: 1;
+        }
+        
+        .hero-bg {
+            background: linear-gradient(135deg, rgba(255, 107, 157, 0.8), rgba(162, 155, 254, 0.8)), 
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="a" cx="50%" cy="50%"><stop offset="0%" stop-color="%23ff6b9d" stop-opacity="0.1"/><stop offset="100%" stop-color="%23a29bfe" stop-opacity="0.3"/></radialGradient></defs><rect width="100%" height="100%" fill="url(%23a)"/></svg>');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .timeline-line {
+            position: relative;
+        }
+        
+        .timeline-line::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(to bottom, #ff6b9d, #a29bfe);
+            transform: translateX(-50%);
+        }
+        
+        .timeline-item {
+            position: relative;
+        }
+        
+        .timeline-dot {
+            position: absolute;
+            left: 50%;
+            top: 2rem;
+            width: 20px;
+            height: 20px;
+            background: #ff6b9d;
+            border: 4px solid white;
+            border-radius: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            box-shadow: 0 0 20px rgba(255, 107, 157, 0.5);
+        }
+        
+        .polaroid {
+            background: white;
+            padding: 1rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            transform: rotate(-2deg);
+            transition: all 0.3s ease;
+        }
+        
+        .polaroid:nth-child(even) {
+            transform: rotate(2deg);
+        }
+        
+        .polaroid:hover {
+            transform: rotate(0deg) scale(1.05);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+        }
+        
+        .love-card {
+            background: linear-gradient(135deg, rgba(255,255,255,0.9), rgba(255,255,255,0.7));
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+        
+        .floating-hearts {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            pointer-events: none;
+        }
+        
+        .heart {
+            position: absolute;
+            color: #ff6b9d;
+            font-size: 20px;
+            animation: float 8s ease-in-out infinite;
+            opacity: 0.3;
+        }
+        
+        .heart:nth-child(1) { left: 10%; animation-delay: 0s; }
+        .heart:nth-child(2) { left: 20%; animation-delay: 2s; }
+        .heart:nth-child(3) { left: 80%; animation-delay: 4s; }
+        .heart:nth-child(4) { left: 90%; animation-delay: 6s; }
+        
+        .gallery-item {
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .gallery-item:hover {
+            transform: scale(1.05);
+            z-index: 10;
+        }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.9);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .modal.active {
+            display: flex;
+        }
+        
+        .surprise-btn {
+            background: linear-gradient(45deg, #ff6b9d, #fd79a8);
+            animation: heartBeat 2s ease-in-out infinite;
+        }
+        
+        .typewriter {
+            overflow: hidden;
+            border-right: 3px solid white;
+            white-space: nowrap;
+            animation: typewriter 3s steps(40) 1s forwards, blink 1s infinite 4s;
+            width: 0;
+        }
+        
+        .sparkle {
+            position: absolute;
+            color: white;
+            font-size: 20px;
+            animation: sparkle 2s ease-in-out infinite;
+            pointer-events: none;
+        }
+        
+        .photo-glow {
+            animation: pulse-glow 3s ease-in-out infinite;
+        }
+        
+        .rotating-border {
+            position: relative;
+        }
+        
+        .rotating-border::before {
+            content: '';
+            position: absolute;
+            inset: -4px;
+            background: linear-gradient(45deg, #ff6b9d, #a29bfe, #ffeaa7, #fd79a8);
+            border-radius: 50%;
+            animation: rotate-slow 4s linear infinite;
+            z-index: -1;
+        }
+        
+        .subtitle-animate {
+            animation: fadeInUp 2s ease-out 2s both;
+        }
+        
+        .button-animate {
+            animation: fadeInUp 2s ease-out 3s both, zoom-in-out 2s ease-in-out 5s infinite;
+        }
+        @media (max-width: 767px) {
+            .typewriter {
+                white-space: normal !important;   /* BẮT BUỘC chữ phải xuống dòng */
+                word-break: break-word;         /* Tự động ngắt chữ nếu một từ quá dài */
+                border-right: none !important;    /* Bỏ dấu nháy của hiệu ứng typewriter */
+                width: auto !important;           /* Cho phép chiều rộng tự động */
+                animation: none !important;       /* Tắt hẳn hiệu ứng animation trên mobile */
+            }
+
+            /* Chỉnh lại font-size cho tiêu đề trên mobile cho đẹp hơn */
+            h1.typewriter {
+                font-size: 2.25rem; /* Cỡ chữ tương đương text-4xl */
+                line-height: 1.2;   /* Giảm khoảng cách giữa các dòng */
+            }
+
+            /* Sửa lỗi nút bấm bị xuống dòng */
+            .button-animate {
+                padding-left: 1.5rem;   /* Giảm đệm ngang của nút */
+                padding-right: 1.5rem;
+                font-size: 1rem;       /* Giảm cỡ chữ của nút */
+            }
+        }
+    </style>
+</head>
+<body class="font-poppins bg-gradient-to-br from-pink-50 to-purple-50">
+    <audio id="backgroundMusic" loop>
+        <source src="./EmDongYIDo-DucPhucx911-9034315.mp3" type="audio/mpeg"> 
+    </audio>
+    <!-- Floating Hearts Background -->
+    <div class="floating-hearts fixed inset-0 z-0">
+        <div class="heart">💖</div>
+        <div class="heart">💕</div>
+        <div class="heart">💗</div>
+        <div class="heart">💝</div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-bg min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-rose/20 to-lavender/20"></div>
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <div class="relative">
+                <!-- Sparkle Effects -->
+                <div class="sparkle" style="top: 10%; left: 15%; animation-delay: 0s;">✨</div>
+                <div class="sparkle" style="top: 20%; right: 20%; animation-delay: 0.5s;">⭐</div>
+                <div class="sparkle" style="bottom: 30%; left: 10%; animation-delay: 1s;">💫</div>
+                <div class="sparkle" style="bottom: 20%; right: 15%; animation-delay: 1.5s;">✨</div>
+                <div class="sparkle" style="top: 50%; left: 5%; animation-delay: 2s;">🌟</div>
+                <div class="sparkle" style="top: 60%; right: 8%; animation-delay: 2.5s;">✨</div>
+                
+                <!-- Couple Photo Placeholder -->
+                <div class="w-64 h-64 mx-auto mb-8 rounded-full overflow-hidden shadow-2xl rotating-border photo-glow animate-fade-in-up">
+                    <svg viewBox="0 0 400 400" class="w-full h-full">
+                        <defs>
+                            <linearGradient id="coupleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#ff6b9d;stop-opacity:0.8" />
+                                <stop offset="100%" style="stop-color:#a29bfe;stop-opacity:0.8" />
+                            </linearGradient>
+                        </defs>
+                        <rect width="400" height="400" fill="url(#coupleGrad)"/>
+                        <!-- Couple silhouette -->
+                        <g fill="white" opacity="0.9">
+                            <circle cx="160" cy="150" r="40"/>
+                            <circle cx="240" cy="150" r="40"/>
+                            <path d="M120 190 Q200 170 280 190 L280 350 Q200 330 120 350 Z"/>
+                            <!-- Heart between them -->
+                            <path d="M200 200 C195 195, 185 195, 185 205 C185 195, 175 195, 170 205 C170 220, 200 240, 200 240 C200 240, 230 220, 230 205 C230 195, 220 195, 215 205 C215 195, 205 195, 200 200 Z" fill="#ff6b9d"/>
+                        </g>
+                    </svg>
+                </div>
+                
+                <h1 class="font-dancing text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 drop-shadow-lg typewriter">
+                    Dành Tặng Em, Người Vợ Tuyệt Vời Của Anh
+                    <span class="inline-block animate-heart-beat text-6xl ml-4">❤️</span>
+                </h1>
+                
+                <p class="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed subtitle-animate">
+                    Một món quà nhỏ, một trang web nhỏ, nhưng chứa đựng cả thế giới tình yêu của anh. 
+                    Hãy cùng anh nhìn lại hành trình chúng ta đã đi qua nhé.
+                </p>
+                
+                <button onclick="scrollToTimeline()" class="bg-white/20 backdrop-blur-sm text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white/30 transition-all duration-300 border border-white/30 button-animate">
+                    Khám Phá Hành Trình Của Chúng Ta 👇
+                </button>
+            </div>
+        </div>
+        
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Love Timeline -->
+    <section id="timeline" class="py-20 bg-gradient-to-b from-white to-pink-50">
+        <div class="container mx-auto px-4">
+            <h2 class="font-dancing text-5xl font-bold text-center text-gray-800 mb-16 animate-fade-in-up">
+                Dòng Thời Gian Tình Yêu Của Chúng Ta
+            </h2>
+            
+            <div class="timeline-line max-w-6xl mx-auto animate-scale-in">
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item grid md:grid-cols-2 gap-8 mb-16">
+                    <div class="timeline-dot animate-bounce-in stagger-1"></div>
+                    <div class="animate-slide-in-left stagger-2">
+                        <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                            <div class="w-full h-50 bg-gradient-to-br from-rose/20 to-peach/20 rounded-xl mb-4 flex items-center justify-center animate-scale-in stagger-3">
+                                <svg class="w-24 h-24 text-rose animate-heart-beat" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <h3 class="font-dancing text-2xl font-bold text-gray-800 mb-2 animate-slide-up stagger-4">Ngày Đầu Gặp Gỡ</h3>
+                            <p class="text-sm text-gray-500 mb-3 animate-slide-up stagger-5">13 tháng 5, 2021</p>
+                            <p class="text-gray-700 leading-relaxed animate-slide-up stagger-6">
+                                Anh vẫ nhớ như in ngày đầu tiên chúng ta nhắn tin lần đầu.Đó là khoảnh khắc anh biết 
+                                rằng cuộc đời anh sẽ thay đổi mãi mãi...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="animate-slide-in-right stagger-3">
+                        <div class="polaroid animate-rotate-in stagger-4">
+                            <div class="w-full h-64 bg-gradient-to-br from-blush/30 to-rose/30 rounded-lg flex items-center justify-center animate-bounce-in stagger-5 overflow-hidden">
+                                <img src="./hi_2.jpg" alt="" class="w-full h-full object-contain rounded-lg">
+                            </div>
+                            <p class="text-center mt-4 font-dancing text-lg animate-slide-up stagger-6">Khoảnh khắc đầu tiên</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item grid md:grid-cols-2 gap-8 mb-16">
+                    <div class="timeline-dot animate-bounce-in stagger-2"></div>
+                    <div class="animate-slide-in-left stagger-3">
+                        <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                            <div class="w-full h-48 bg-gradient-to-br from-blush/20 to-lavender/20 rounded-xl mb-4 flex items-center justify-center animate-scale-in stagger-4">
+                                <svg class="w-24 h-24 text-blush animate-bounce" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+                                </svg>                               
+                            </div>
+                            <h3 class="font-dancing text-2xl font-bold text-gray-800 mb-2 animate-slide-up stagger-5">Ngày Cưới</h3>
+                            <p class="text-sm text-gray-500 mb-3 animate-slide-up stagger-6">Ngày 22 tháng 09, 2024</p>
+                            <p class="text-gray-700 leading-relaxed animate-slide-up stagger-7">
+                                Ngày 22 tháng 09 năm 2024, chúng ta chính thức về chung một nhà. Đó là ngày hạnh phúc 
+                                nhất cuộc đời anh. Nhìn em trong chiếc váy cưới trắng muốt, anh biết rằng anh là người 
+                                đàn ông may mắn nhất thế gian...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="animate-slide-in-right stagger-4">
+                        <div class="polaroid animate-rotate-in stagger-5">
+                            <div class="w-full h-97  rounded-lg flex items-center justify-center animate-bounce-in stagger-6 overflow-hidden">
+                                <img src="./cuoi.jpg" alt="Ngày trọng đại" class="w-full h-full object-cover rounded-lg">
+                            </div>
+                            <p class="text-center mt-4 font-dancing text-lg animate-slide-up stagger-7">Ngày trọng đại</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Things I Love About You -->
+    <section class="py-20 bg-gradient-to-b from-pink-50 to-purple-50">
+        <div class="container mx-auto px-4">
+            <h2 class="font-dancing text-5xl font-bold text-center text-gray-800 mb-16 animate-fade-in-up">
+                Những Điều Anh Yêu Ở Em
+            </h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto animate-scale-in stagger-1">
+                <!-- Love Card 1 -->
+                <div class="love-card rounded-2xl p-6 transform hover:scale-105 transition-all duration-300 animate-bounce-in stagger-2">
+                    <div class="w-full h-49 image-placeholder rounded-xl mb-4 flex items-center justify-center animate-scale-in stagger-3" style="background-image: url('data:image/svg+xml,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 400 300&quot;><defs><linearGradient id=&quot;smile&quot; x1=&quot;0%&quot; y1=&quot;0%&quot; x2=&quot;100%&quot; y2=&quot;100%&quot;><stop offset=&quot;0%&quot; style=&quot;stop-color:%23ff6b9d;stop-opacity:0.3&quot;/><stop offset=&quot;100%&quot; style=&quot;stop-color:%23fd79a8;stop-opacity:0.3&quot;/></linearGradient></defs><rect width=&quot;400&quot; height=&quot;300&quot; fill=&quot;url(%23smile)&quot;/><circle cx=&quot;200&quot; cy=&quot;120&quot; r=&quot;80&quot; fill=&quot;%23ffeb3b&quot; opacity=&quot;0.8&quot;/><circle cx=&quot;170&quot; cy=&quot;100&quot; r=&quot;8&quot; fill=&quot;%23333&quot;/><circle cx=&quot;230&quot; cy=&quot;100&quot; r=&quot;8&quot; fill=&quot;%23333&quot;/><path d=&quot;M160 140 Q200 170 240 140&quot; stroke=&quot;%23333&quot; stroke-width=&quot;4&quot; fill=&quot;none&quot;/></svg>');">
+                        <img src="./hi_3.jpg" alt="Ngày trọng đại" class="w-full h-full object-cover rounded-lg">
+                    </div>
+                    <h3 class="font-dancing text-2xl font-bold text-gray-800 mb-3 animate-slide-up stagger-4">Nụ Cười Của Em</h3>
+                    <p class="text-gray-700 animate-fade-in-up stagger-5">
+                        Anh yêu nụ cười tươi như nắng mai của em. Mỗi khi em cười, cả thế giới của anh đều sáng lên.
+                    </p>
+                </div>
+
+                <!-- Love Card 2 -->
+                <div class="love-card rounded-2xl p-6 transform hover:scale-105 transition-all duration-300 animate-scale-in stagger-3">
+                    <div class="w-full h-49 image-placeholder rounded-xl mb-4 flex items-center justify-center animate-rotate-in stagger-4" style="background-image: url('data:image/svg+xml,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 400 300&quot;><defs><linearGradient id=&quot;care&quot; x1=&quot;0%&quot; y1=&quot;0%&quot; x2=&quot;100%&quot; y2=&quot;100%&quot;><stop offset=&quot;0%&quot; style=&quot;stop-color:%23a29bfe;stop-opacity:0.3&quot;/><stop offset=&quot;100%&quot; style=&quot;stop-color:%23ff6b9d;stop-opacity:0.3&quot;/></linearGradient></defs><rect width=&quot;400&quot; height=&quot;300&quot; fill=&quot;url(%23care)&quot;/><path d=&quot;M200 80 C190 70, 170 70, 170 90 C170 70, 150 70, 140 90 C140 120, 200 160, 200 160 C200 160, 260 120, 260 90 C260 70, 240 70, 230 90 C230 70, 210 70, 200 80 Z&quot; fill=&quot;%23ff6b9d&quot; opacity=&quot;0.7&quot;/></svg>');">
+                       <img src="./hi_8.jpg" alt="Ngày trọng đại" class="w-full h-full object-cover rounded-lg">
+                    </div>
+                    <h3 class="font-dancing text-2xl font-bold text-gray-800 mb-3 animate-slide-up stagger-5">Sự Quan Tâm Dịu Dàng</h3>
+                    <p class="text-gray-700 animate-fade-in-up stagger-6">
+                        Anh yêu cách em chăm sóc anh, từ những bữa cơm ngon đến những lời động viên khi anh mệt mỏi.
+                    </p>
+                </div>
+
+                <!-- Love Card 3 -->
+                <div class="love-card rounded-2xl p-6 transform hover:scale-105 transition-all duration-300 animate-flip-in stagger-4">
+                    <div class="w-full h-49 image-placeholder rounded-xl mb-4 flex items-center justify-center animate-bounce-in stagger-5" style="background-image: url('data:image/svg+xml,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 400 300&quot;><defs><linearGradient id=&quot;angry&quot; x1=&quot;0%&quot; y1=&quot;0%&quot; x2=&quot;100%&quot; y2=&quot;100%&quot;><stop offset=&quot;0%&quot; style=&quot;stop-color:%23ffeaa7;stop-opacity:0.3&quot;/><stop offset=&quot;100%&quot; style=&quot;stop-color:%23a29bfe;stop-opacity:0.3&quot;/></linearGradient></defs><rect width=&quot;400&quot; height=&quot;300&quot; fill=&quot;url(%23angry)&quot;/><circle cx=&quot;200&quot; cy=&quot;120&quot; r=&quot;80&quot; fill=&quot;%23ff9ff3&quot; opacity=&quot;0.8&quot;/><path d=&quot;M160 100 L180 110 L160 120&quot; stroke=&quot;%23333&quot; stroke-width=&quot;3&quot; fill=&quot;none&quot;/><path d=&quot;M240 100 L220 110 L240 120&quot; stroke=&quot;%23333&quot; stroke-width=&quot;3&quot; fill=&quot;none&quot;/><circle cx=&quot;200&quot; cy=&quot;150&quot; r=&quot;15&quot; fill=&quot;%23ff6b9d&quot; opacity=&quot;0.6&quot;/></svg>');">
+                        <img src="./hi.jpg" alt="Ngày trọng đại" class="w-full h-full object-cover rounded-lg">
+                    </div>
+                    <h3 class="font-dancing text-2xl font-bold text-gray-800 mb-3 animate-slide-up stagger-6">Cả Lúc Em Giận Dỗi</h3>
+                    <p class="text-gray-700 animate-fade-in-up stagger-7">
+                        Anh yêu cả những lúc em giận dỗi vu vơ, vì ngay cả khi giận, em vẫn đáng yêu không thể tả.
+                    </p>
+                </div>
+
+                <!-- Love Card 4 -->
+                <div class="love-card rounded-2xl p-6 transform hover:scale-105 transition-all duration-300 animate-slide-up stagger-5">
+                    <div class="w-full h-49 image-placeholder rounded-xl mb-4 flex items-center justify-center animate-flip-in stagger-6" style="background-image: url('data:image/svg+xml,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 400 300&quot;><defs><linearGradient id=&quot;passion&quot; x1=&quot;0%&quot; y1=&quot;0%&quot; x2=&quot;100%&quot; y2=&quot;100%&quot;><stop offset=&quot;0%&quot; style=&quot;stop-color:%23fd79a8;stop-opacity:0.3&quot;/><stop offset=&quot;100%&quot; style=&quot;stop-color:%23ff6b9d;stop-opacity:0.3&quot;/></linearGradient></defs><rect width=&quot;400&quot; height=&quot;300&quot; fill=&quot;url(%23passion)&quot;/><rect x=&quot;150&quot; y=&quot;80&quot; width=&quot;100&quot; height=&quot;120&quot; fill=&quot;%23fff&quot; opacity=&quot;0.9&quot;/><circle cx=&quot;170&quot; cy=&quot;100&quot; r=&quot;8&quot; fill=&quot;%23ff6b9d&quot;/><circle cx=&quot;230&quot; cy=&quot;100&quot; r=&quot;8&quot; fill=&quot;%23a29bfe&quot;/><rect x=&quot;160&quot; y=&quot;120&quot; width=&quot;80&quot; height=&quot;4&quot; fill=&quot;%23ffeaa7&quot;/><rect x=&quot;160&quot; y=&quot;140&quot; width=&quot;60&quot; height=&quot;4&quot; fill=&quot;%23fd79a8&quot;/><rect x=&quot;160&quot; y=&quot;160&quot; width=&quot;70&quot; height=&quot;4&quot; fill=&quot;%23a29bfe&quot;/></svg>');">
+                        <img src="./hi_7.jpg" alt="Ngày trọng đại" class="w-full h-full object-cover rounded-lg">
+                    </div>
+                    <h3 class="font-dancing text-2xl font-bold text-gray-800 mb-3 animate-slide-up stagger-7">Đam Mê Của Em</h3>
+                    <p class="text-gray-700 animate-fade-in-up stagger-8">
+                        Anh yêu cách em say sưa với những điều em thích, ánh mắt em lúc đó thật rạng ngời.
+                    </p>
+                </div>
+
+                <!-- Love Card 5 -->
+                <div class="love-card rounded-2xl p-6 transform hover:scale-105 transition-all duration-300 animate-rotate-in stagger-6">
+                    <div class="w-full h-49 image-placeholder rounded-xl mb-4 flex items-center justify-center animate-scale-in stagger-7" style="background-image: url('data:image/svg+xml,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 400 300&quot;><defs><linearGradient id=&quot;sleep&quot; x1=&quot;0%&quot; y1=&quot;0%&quot; x2=&quot;100%&quot; y2=&quot;100%&quot;><stop offset=&quot;0%&quot; style=&quot;stop-color:%23ff6b9d;stop-opacity:0.3&quot;/><stop offset=&quot;100%&quot; style=&quot;stop-color:%23ffeaa7;stop-opacity:0.3&quot;/></linearGradient></defs><rect width=&quot;400&quot; height=&quot;300&quot; fill=&quot;url(%23sleep)&quot;/><circle cx=&quot;100&quot; cy=&quot;80&quot; r=&quot;20&quot; fill=&quot;%23ffeaa7&quot; opacity=&quot;0.8&quot;/><circle cx=&quot;150&quot; cy=&quot;60&quot; r=&quot;15&quot; fill=&quot;%23ffeaa7&quot; opacity=&quot;0.6&quot;/><circle cx=&quot;200&quot; cy=&quot;70&quot; r=&quot;10&quot; fill=&quot;%23ffeaa7&quot; opacity=&quot;0.4&quot;/><ellipse cx=&quot;200&quot; cy=&quot;180&quot; rx=&quot;120&quot; ry=&quot;60&quot; fill=&quot;%23a29bfe&quot; opacity=&quot;0.4&quot;/><circle cx=&quot;200&quot; cy=&quot;160&quot; r=&quot;40&quot; fill=&quot;%23ffb3d9&quot; opacity=&quot;0.7&quot;/></svg>');">
+                        <img src="./bau_1.jpg" alt="Ngày trọng đại" class="w-full h-full object-cover rounded-lg">
+                    </div>
+                    <h3 class="font-dancing text-2xl font-bold text-gray-800 mb-3 animate-slide-up stagger-8">Giấc Ngủ Ngoan</h3>
+                    <p class="text-gray-700 animate-fade-in-up stagger-1">
+                        Anh yêu cách em ngủ say trong vòng tay anh, thật yên bình và đáng yêu.
+                    </p>
+                </div>
+
+                <!-- Love Card 6 -->
+                <div class="love-card rounded-2xl p-6 transform hover:scale-105 transition-all duration-300 animate-slide-down stagger-7">
+                    <div class="w-full h-49 image-placeholder rounded-xl mb-4 flex items-center justify-center animate-bounce-in stagger-8" style="background-image: url('data:image/svg+xml,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 400 300&quot;><defs><linearGradient id=&quot;everything&quot; x1=&quot;0%&quot; y1=&quot;0%&quot; x2=&quot;100%&quot; y2=&quot;100%&quot;><stop offset=&quot;0%&quot; style=&quot;stop-color:%23a29bfe;stop-opacity:0.3&quot;/><stop offset=&quot;100%&quot; style=&quot;stop-color:%23fd79a8;stop-opacity:0.3&quot;/></linearGradient></defs><rect width=&quot;400&quot; height=&quot;300&quot; fill=&quot;url(%23everything)&quot;/><path d=&quot;M200 60 C190 50, 170 50, 170 70 C170 50, 150 50, 140 70 C140 100, 200 140, 200 140 C200 140, 260 100, 260 70 C260 50, 240 50, 230 70 C230 50, 210 50, 200 60 Z&quot; fill=&quot;%23ff6b9d&quot; opacity=&quot;0.8&quot;/><path d=&quot;M200 100 C195 95, 185 95, 185 105 C185 95, 175 95, 170 105 C170 120, 200 140, 200 140 C200 140, 230 120, 230 105 C230 95, 220 95, 215 105 C215 95, 205 95, 200 100 Z&quot; fill=&quot;%23ffeaa7&quot; opacity=&quot;0.8&quot;/><path d=&quot;M200 140 C195 135, 185 135, 185 145 C185 135, 175 135, 170 145 C170 160, 200 180, 200 180 C200 180, 230 160, 230 145 C230 135, 220 135, 215 145 C215 135, 205 135, 200 140 Z&quot; fill=&quot;%23fd79a8&quot; opacity=&quot;0.8&quot;/></svg>');">
+                        <img src="./hi_4.jpg" alt="Ngày trọng đại" class="w-full h-full object-cover rounded-lg">
+                    </div>
+                    <h3 class="font-dancing text-2xl font-bold text-gray-800 mb-3 animate-slide-up stagger-1">Tất Cả Về Em</h3>
+                    <p class="text-gray-700 animate-fade-in-up stagger-2">
+                        Anh yêu tất cả về em - từ cách em cười, khóc, giận dỗi đến cách em yêu thương anh.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="font-dancing text-5xl font-bold text-center text-gray-800 mb-16 animate-fade-in-up">
+                Khoảnh Khắc Của Chúng Ta
+            </h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-6xl mx-auto animate-scale-in stagger-1">
+                <!-- Gallery items -->
+                <div class="gallery-item aspect-square image-placeholder rounded-lg flex items-center justify-center animate-scale-in stagger-2 hover:animate-bounce" onclick="openModal('modal1')" style="background-image: url('data:image/svg+xml,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 300 300&quot;><defs><linearGradient id=&quot;beach&quot; x1=&quot;0%&quot; y1=&quot;0%&quot; x2=&quot;100%&quot; y2=&quot;100%&quot;><stop offset=&quot;0%&quot; style=&quot;stop-color:%23ff6b9d;stop-opacity:0.3&quot;/><stop offset=&quot;100%&quot; style=&quot;stop-color:%23fd79a8;stop-opacity:0.3&quot;/></linearGradient></defs><rect width=&quot;300&quot; height=&quot;300&quot; fill=&quot;url(%23beach)&quot;/><circle cx=&quot;80&quot; cy=&quot;80&quot; r=&quot;40&quot; fill=&quot;%23ffeaa7&quot; opacity=&quot;0.8&quot;/><path d=&quot;M0 200 Q150 180 300 200 L300 300 L0 300 Z&quot; fill=&quot;%2374b9ff&quot; opacity=&quot;0.6&quot;/><path d=&quot;M0 220 Q150 200 300 220 L300 300 L0 300 Z&quot; fill=&quot;%23ffeaa7&quot; opacity=&quot;0.4&quot;/></svg>');">
+                    <img src="./bau4.jpg" alt="Ngày trọng đại" class="w-full h-full object-cover rounded-lg">
+                </div>
+                <div class="gallery-item aspect-square image-placeholder rounded-lg flex items-center justify-center animate-bounce-in stagger-3 hover:animate-pulse" onclick="openModal('modal2')" style="background-image: url('data:image/svg+xml,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 300 300&quot;><defs><linearGradient id=&quot;dinner&quot; x1=&quot;0%&quot; y1=&quot;0%&quot; x2=&quot;100%&quot; y2=&quot;100%&quot;><stop offset=&quot;0%&quot; style=&quot;stop-color:%23a29bfe;stop-opacity:0.3&quot;/><stop offset=&quot;100%&quot; style=&quot;stop-color:%23ff6b9d;stop-opacity:0.3&quot;/></linearGradient></defs><rect width=&quot;300&quot; height=&quot;300&quot; fill=&quot;url(%23dinner)&quot;/><ellipse cx=&quot;150&quot; cy=&quot;150&quot; rx=&quot;100&quot; ry=&quot;60&quot; fill=&quot;%23fff&quot; opacity=&quot;0.9&quot;/><circle cx=&quot;120&quot; cy=&quot;130&quot; r=&quot;15&quot; fill=&quot;%23ff6b9d&quot; opacity=&quot;0.7&quot;/><circle cx=&quot;180&quot; cy=&quot;130&quot; r=&quot;15&quot; fill=&quot;%23a29bfe&quot; opacity=&quot;0.7&quot;/><rect x=&quot;140&quot; y=&quot;160&quot; width=&quot;20&quot; height=&quot;40&quot; fill=&quot;%23ffeaa7&quot; opacity=&quot;0.8&quot;/></svg>');">
+                    <img src="./bau5.jpg" alt="Ngày trọng đại" class="w-full h-full object-cover rounded-lg">
+                </div>
+                <div class="gallery-item aspect-square image-placeholder rounded-lg flex items-center justify-center animate-flip-in stagger-4 hover:animate-bounce" onclick="openModal('modal3')" style="background-image: url('data:image/svg+xml,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 300 300&quot;><defs><linearGradient id=&quot;christmas&quot; x1=&quot;0%&quot; y1=&quot;0%&quot; x2=&quot;100%&quot; y2=&quot;100%&quot;><stop offset=&quot;0%&quot; style=&quot;stop-color:%23ffeaa7;stop-opacity:0.3&quot;/><stop offset=&quot;100%&quot; style=&quot;stop-color:%23a29bfe;stop-opacity:0.3&quot;/></linearGradient></defs><rect width=&quot;300&quot; height=&quot;300&quot; fill=&quot;url(%23christmas)&quot;/><polygon points=&quot;150,50 120,120 180,120&quot; fill=&quot;%2300b894&quot; opacity=&quot;0.8&quot;/><polygon points=&quot;150,80 130,140 170,140&quot; fill=&quot;%2300b894&quot; opacity=&quot;0.8&quot;/><polygon points=&quot;150,110 140,160 160,160&quot; fill=&quot;%2300b894&quot; opacity=&quot;0.8&quot;/><rect x=&quot;145&quot; y=&quot;160&quot; width=&quot;10&quot; height=&quot;20&quot; fill=&quot;%23d63031&quot;/><circle cx=&quot;150&quot; cy=&quot;60&quot; r=&quot;5&quot; fill=&quot;%23ffeaa7&quot;/></svg>');">
+                    <img src="./bau2.jpg" alt="Ngày trọng đại" class="w-full h-full object-cover rounded-lg">
+                </div>
+                <div class="gallery-item aspect-square image-placeholder rounded-lg flex items-center justify-center animate-slide-up stagger-5 hover:animate-pulse" onclick="openModal('modal4')" style="background-image: url('data:image/svg+xml,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 300 300&quot;><defs><linearGradient id=&quot;spring&quot; x1=&quot;0%&quot; y1=&quot;0%&quot; x2=&quot;100%&quot; y2=&quot;100%&quot;><stop offset=&quot;0%&quot; style=&quot;stop-color:%23fd79a8;stop-opacity:0.3&quot;/><stop offset=&quot;100%&quot; style=&quot;stop-color:%23ff6b9d;stop-opacity:0.3&quot;/></linearGradient></defs><rect width=&quot;300&quot; height=&quot;300&quot; fill=&quot;url(%23spring)&quot;/><circle cx=&quot;100&quot; cy=&quot;100&quot; r=&quot;20&quot; fill=&quot;%23ff6b9d&quot; opacity=&quot;0.8&quot;/><circle cx=&quot;200&quot; cy=&quot;120&quot; r=&quot;25&quot; fill=&quot;%23fd79a8&quot; opacity=&quot;0.8&quot;/><circle cx=&quot;150&quot; cy=&quot;180&quot; r=&quot;18&quot; fill=&quot;%23ffeaa7&quot; opacity=&quot;0.8&quot;/><circle cx=&quot;80&quot; cy=&quot;200&quot; r=&quot;15&quot; fill=&quot;%23a29bfe&quot; opacity=&quot;0.8&quot;/><circle cx=&quot;220&quot; cy=&quot;200&quot; r=&quot;22&quot; fill=&quot;%23ff6b9d&quot; opacity=&quot;0.8&quot;/></svg>');">
+                    <img src="./cuoi1.jpg" alt="Ngày trọng đại" class="w-full h-full object-cover rounded-lg">
+                </div>
+                <div class="gallery-item aspect-square image-placeholder rounded-lg flex items-center justify-center animate-rotate-in stagger-6 hover:animate-bounce" onclick="openModal('modal5')" style="background-image: url('data:image/svg+xml,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 300 300&quot;><defs><linearGradient id=&quot;home&quot; x1=&quot;0%&quot; y1=&quot;0%&quot; x2=&quot;100%&quot; y2=&quot;100%&quot;><stop offset=&quot;0%&quot; style=&quot;stop-color:%23ff6b9d;stop-opacity:0.3&quot;/><stop offset=&quot;100%&quot; style=&quot;stop-color:%23ffeaa7;stop-opacity:0.3&quot;/></linearGradient></defs><rect width=&quot;300&quot; height=&quot;300&quot; fill=&quot;url(%23home)&quot;/><polygon points=&quot;150,80 100,130 200,130&quot; fill=&quot;%23d63031&quot; opacity=&quot;0.8&quot;/><rect x=&quot;120&quot; y=&quot;130&quot; width=&quot;60&quot; height=&quot;80&quot; fill=&quot;%23ffeaa7&quot; opacity=&quot;0.9&quot;/><rect x=&quot;140&quot; y=&quot;150&quot; width=&quot;20&quot; height=&quot;30&quot; fill=&quot;%2374b9ff&quot; opacity=&quot;0.7&quot;/><rect x=&quot;145&quot; y=&quot;190&quot; width=&quot;10&quot; height=&quot;20&quot; fill=&quot;%23d63031&quot;/></svg>');">
+                    <img src="./cuoi2.jpg" alt="Ngày trọng đại" class="w-full h-full object-cover rounded-lg">
+                </div>
+                <div class="gallery-item aspect-square image-placeholder rounded-lg flex items-center justify-center animate-slide-down stagger-7 hover:animate-pulse" onclick="openModal('modal6')" style="background-image: url('data:image/svg+xml,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 300 300&quot;><defs><linearGradient id=&quot;birthday&quot; x1=&quot;0%&quot; y1=&quot;0%&quot; x2=&quot;100%&quot; y2=&quot;100%&quot;><stop offset=&quot;0%&quot; style=&quot;stop-color:%23a29bfe;stop-opacity:0.3&quot;/><stop offset=&quot;100%&quot; style=&quot;stop-color:%23fd79a8;stop-opacity:0.3&quot;/></linearGradient></defs><rect width=&quot;300&quot; height=&quot;300&quot; fill=&quot;url(%23birthday)&quot;/><rect x=&quot;100&quot; y=&quot;150&quot; width=&quot;100&quot; height=&quot;80&quot; fill=&quot;%23ffeaa7&quot; opacity=&quot;0.9&quot;/><rect x=&quot;110&quot; y=&quot;130&quot; width=&quot;80&quot; height=&quot;20&quot; fill=&quot;%23ff6b9d&quot; opacity=&quot;0.8&quot;/><rect x=&quot;145&quot; y=&quot;110&quot; width=&quot;3&quot; height=&quot;20&quot; fill=&quot;%23ffeaa7&quot;/><rect x=&quot;152&quot; y=&quot;110&quot; width=&quot;3&quot; height=&quot;20&quot; fill=&quot;%23ffeaa7&quot;/><ellipse cx=&quot;148&quot; cy=&quot;105&quot; rx=&quot;4&quot; ry=&quot;8&quot; fill=&quot;%23fd79a8&quot;/><ellipse cx=&quot;155&quot; cy=&quot;105&quot; rx=&quot;4&quot; ry=&quot;8&quot; fill=&quot;%23fd79a8&quot;/></svg>');">
+                    <img src="./cuoi3.jpg" alt="Ngày trọng đại" class="w-full h-full object-cover rounded-lg">
+                </div>
+                <div class="gallery-item aspect-square image-placeholder rounded-lg flex items-center justify-center animate-scale-in stagger-8 hover:animate-bounce" onclick="openModal('modal7')" style="background-image: url('data:image/svg+xml,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 300 300&quot;><defs><linearGradient id=&quot;sunrise&quot; x1=&quot;0%&quot; y1=&quot;0%&quot; x2=&quot;100%&quot; y2=&quot;100%&quot;><stop offset=&quot;0%&quot; style=&quot;stop-color:%23ffeaa7;stop-opacity:0.3&quot;/><stop offset=&quot;100%&quot; style=&quot;stop-color:%23ff6b9d;stop-opacity:0.3&quot;/></linearGradient></defs><rect width=&quot;300&quot; height=&quot;300&quot; fill=&quot;url(%23sunrise)&quot;/><circle cx=&quot;80&quot; cy=&quot;80&quot; r=&quot;40&quot; fill=&quot;%23ffeaa7&quot; opacity=&quot;0.9&quot;/><path d=&quot;M0 150 Q150 130 300 150 L300 300 L0 300 Z&quot; fill=&quot;%2300b894&quot; opacity=&quot;0.4&quot;/><path d=&quot;M0 180 Q150 160 300 180 L300 300 L0 300 Z&quot; fill=&quot;%2300b894&quot; opacity=&quot;0.6&quot;/><circle cx=&quot;200&quot; cy=&quot;200&quot; r=&quot;8&quot; fill=&quot;%23ff6b9d&quot; opacity=&quot;0.7&quot;/><circle cx=&quot;120&quot; cy=&quot;220&quot; r=&quot;6&quot; fill=&quot;%23fd79a8&quot; opacity=&quot;0.7&quot;/></svg>');">
+                    <img src="./cuoi5.jpg" alt="Ngày trọng đại" class="w-full h-full object-cover rounded-lg">
+                </div>
+                <div class="gallery-item aspect-square image-placeholder rounded-lg flex items-center justify-center animate-bounce-in stagger-1 hover:animate-pulse" onclick="openModal('modal8')" style="background-image: url('data:image/svg+xml,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 300 300&quot;><defs><linearGradient id=&quot;love&quot; x1=&quot;0%&quot; y1=&quot;0%&quot; x2=&quot;100%&quot; y2=&quot;100%&quot;><stop offset=&quot;0%&quot; style=&quot;stop-color:%23fd79a8;stop-opacity:0.3&quot;/><stop offset=&quot;100%&quot; style=&quot;stop-color:%23a29bfe;stop-opacity:0.3&quot;/></linearGradient></defs><rect width=&quot;300&quot; height=&quot;300&quot; fill=&quot;url(%23love)&quot;/><path d=&quot;M150 100 C140 90, 120 90, 120 110 C120 90, 100 90, 90 110 C90 140, 150 180, 150 180 C150 180, 210 140, 210 110 C210 90, 190 90, 180 110 C180 90, 160 90, 150 100 Z&quot; fill=&quot;%23ff6b9d&quot; opacity=&quot;0.8&quot;/><path d=&quot;M150 140 C145 135, 135 135, 135 145 C135 135, 125 135, 120 145 C120 160, 150 180, 150 180 C150 180, 180 160, 180 145 C180 135, 170 135, 165 145 C165 135, 155 135, 150 140 Z&quot; fill=&quot;%23fd79a8&quot; opacity=&quot;0.8&quot;/></svg>');">
+                    <img src="./bau3.jpg" alt="Ngày trọng đại" class="w-full h-full object-cover rounded-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Love Letter & Surprise -->
+    <section class="py-20 bg-gradient-to-br from-rose/10 to-lavender/10 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-rose/5 to-lavender/5 animate-fade-in-up"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="bg-white/80 backdrop-blur-sm rounded-3xl p-12 shadow-2xl animate-scale-in stagger-1">
+                    <h2 class="font-dancing text-4xl font-bold text-gray-800 mb-8 animate-slide-down stagger-2">
+                        Lời Nhắn Từ Trái Tim Anh
+                        <span class="inline-block animate-heart-beat text-rose ml-2">💌</span>
+                    </h2>
+                    
+                    <div class="text-left max-w-2xl mx-auto animate-fade-in-up stagger-3">
+                        <p class="font-dancing text-2xl text-gray-800 mb-6 animate-slide-up stagger-4">Em yêu,</p>
+                        
+                        <div class="space-y-4 text-lg text-gray-700 leading-relaxed">
+                            <p class="animate-slide-up stagger-5 hover:text-rose transition-colors duration-300">
+                                Ngồi viết những dòng này, anh không khỏi xúc động khi nhìn lại chặng đường chúng ta đã cùng nhau đi qua. 
+                                Từ những ngày đầu bỡ ngỡ, đến lúc này khi em đã trở thành một phần không thể thiếu trong cuộc sống của anh.
+                            </p>
+                            
+                            <p class="animate-slide-up stagger-6 hover:text-lavender transition-colors duration-300">
+                                Cảm ơn em vì đã luôn ở bên anh trong những lúc khó khăn nhất, vì đã chia sẻ những niềm vui và nỗi buồn, 
+                                vì đã làm cho ngôi nhà của chúng ta luôn tràn ngập tiếng cười. Em chính là động lực để anh trở thành 
+                                một người đàn ông tốt hơn mỗi ngày.
+                            </p>
+                            
+                            <p class="animate-slide-up stagger-7 hover:text-peach transition-colors duration-300">
+                                Anh hứa sẽ luôn yêu thương, trân trọng và bảo vệ em. Hứa sẽ cùng em xây dựng một tương lai tươi đẹp, 
+                                cùng em vượt qua mọi thử thách và cùng em tạo nên những kỷ niệm đẹp hơn nữa.
+                            </p>
+                        </div>
+                        
+                        <p class="font-dancing text-2xl text-gray-800 mt-8 text-right animate-slide-up stagger-8">
+                            Yêu em rất nhiều,<br>
+                            <span class="text-rose animate-heart-beat">Chồng của em ❤️</span>
+                        </p>
+                    </div>
+                    
+                    <!-- <div class="mt-12 pt-8 border-t border-gray-200 animate-bounce-in stagger-1">
+                        <p class="text-xl text-gray-600 mb-6 animate-fade-in-up stagger-2">
+                            Và... anh còn một bất ngờ nho nhỏ nữa dành cho em...
+                            <span class="inline-block animate-float ml-2">🎁</span>
+                        </p>
+                        
+                        <button onclick="showSurprise()" class="surprise-btn text-white px-10 py-4 rounded-full text-xl font-bold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 animate-bounce-in stagger-3">
+                            Nhận Quà Ngay! 
+                            <span class="inline-block animate-heart-beat ml-2">🎁</span>
+                        </button>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals for Gallery -->
+    <div id="modal1" class="modal" onclick="closeModal('modal1')">
+        <div class="bg-white rounded-2xl p-8 max-w-2xl mx-4">
+            <h3 class="font-dancing text-3xl font-bold text-center mb-4">Chuyến Đi Biển</h3>
+            <div class="w-full h-64 bg-gradient-to-br from-rose/20 to-peach/20 rounded-xl flex items-center justify-center mb-4">
+                <span class="text-8xl">🏖️</span>
+            </div>
+            <p class="text-center text-gray-700">Kỷ niệm tuyệt vời ở bãi biển Nha Trang</p>
+        </div>
+    </div>
+
+    <!-- Surprise Modal -->
+    <!-- <div id="surpriseModal" class="modal">
+        <div class="bg-white rounded-3xl p-12 max-w-2xl mx-4 text-center">
+            <div class="text-8xl mb-6">🎉</div>
+            <h3 class="font-dancing text-4xl font-bold text-rose mb-6">Bất Ngờ Dành Cho Em!</h3>
+            <p class="text-xl text-gray-700 mb-8">
+                Tối nay anh đã đặt bàn ở nhà hàng yêu thích của chúng ta, 7 giờ mình đi nhé! 
+                Và đừng quên nhìn vào hộp quà trên bàn đi em yêu! 😘
+            </p>
+            <button onclick="closeModal('surpriseModal')" class="bg-gradient-to-r from-rose to-peach text-white px-8 py-3 rounded-full font-semibold">
+                Đóng ❤️
+            </button>
+        </div>
+    </div> -->
+
+    <script>
+        // Smooth scroll to timeline
+        function scrollToTimeline() {
+            // Cuộn trang xuống phần Dòng Thời Gian
+            document.getElementById('timeline').scrollIntoView({ 
+                behavior: 'smooth' 
+            });
+
+            // Lấy phần tử audio bằng ID
+            const music = document.getElementById('backgroundMusic');
+            
+            // Kiểm tra xem nhạc có đang dừng không, nếu có thì phát
+            if (music.paused) {
+                music.play().catch(error => {
+                    // Xử lý lỗi nếu trình duyệt chặn tự động phát nhạc
+                    console.log("Việc phát nhạc cần sự tương tác từ người dùng.", error);
+                });
+            }
+        }
+
+        // Modal functions
+        function openModal(modalId) {
+            document.getElementById(modalId).classList.add('active');
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).classList.remove('active');
+        }
+
+        // Show surprise
+        function showSurprise() {
+            // Add confetti effect
+            createConfetti();
+            
+            setTimeout(() => {
+                openModal('surpriseModal');
+            }, 1000);
+        }
+
+        // Create confetti effect
+        function createConfetti() {
+            const colors = ['#ff6b9d', '#a29bfe', '#ffeaa7', '#fd79a8'];
+            
+            for (let i = 0; i < 50; i++) {
+                const confetti = document.createElement('div');
+                confetti.style.position = 'fixed';
+                confetti.style.left = Math.random() * 100 + 'vw';
+                confetti.style.top = '-10px';
+                confetti.style.width = '10px';
+                confetti.style.height = '10px';
+                confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                confetti.style.zIndex = '9999';
+                confetti.style.borderRadius = '50%';
+                confetti.style.animation = `fall ${Math.random() * 3 + 2}s linear forwards`;
+                
+                document.body.appendChild(confetti);
+                
+                setTimeout(() => {
+                    confetti.remove();
+                }, 5000);
+            }
+        }
+
+        // Add fall animation for confetti
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes fall {
+                to {
+                    transform: translateY(100vh) rotate(360deg);
+                }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Add scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0) translateX(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all animated elements
+        document.querySelectorAll('.animate-slide-in-left, .animate-slide-in-right, .animate-fade-in-up, .animate-slide-up, .animate-slide-down, .animate-scale-in, .animate-rotate-in, .animate-bounce-in, .animate-flip-in').forEach(el => {
+            el.style.opacity = '0';
+            observer.observe(el);
+        });
+
+        // Music player simulation
+        document.querySelectorAll('button').forEach(btn => {
+            if (btn.textContent.includes('▶️')) {
+                btn.addEventListener('click', function() {
+                    this.textContent = this.textContent.includes('▶️') ? '⏸️' : '▶️';
+                    
+                    // Show playing message
+                    const songTitle = this.parentElement.querySelector('h4').textContent;
+                    showMessage(`Đang phát: ${songTitle} 🎵`);
+                });
+            }
+        });
+
+        // Show message function
+        function showMessage(text) {
+            const message = document.createElement('div');
+            message.className = 'fixed top-4 right-4 bg-rose text-white px-6 py-3 rounded-full shadow-lg z-50 transform translate-x-full transition-transform duration-300';
+            message.textContent = text;
+            document.body.appendChild(message);
+            
+            setTimeout(() => {
+                message.style.transform = 'translateX(0)';
+            }, 100);
+            
+            setTimeout(() => {
+                message.style.transform = 'translateX(100%)';
+                setTimeout(() => message.remove(), 300);
+            }, 3000);
+        }
+
+        // Add more gallery modals
+        for (let i = 2; i <= 8; i++) {
+            const modal = document.createElement('div');
+            modal.id = `modal${i}`;
+            modal.className = 'modal';
+            modal.onclick = () => closeModal(`modal${i}`);
+            
+            const themes = ['Bữa Tối Lãng Mạn', 'Giáng Sinh Ấm Áp', 'Mùa Xuân Tươi Mới', 'Tổ Ấm Nhỏ', 'Sinh Nhật Vui Vẻ', 'Bình Minh Đẹp', 'Tình Yêu Vĩnh Cửu'];
+            const emojis = ['🍽️', '🎄', '🌸', '🏠', '🎂', '🌅', '💕'];
+            
+            modal.innerHTML = `
+                <div class="bg-white rounded-2xl p-8 max-w-2xl mx-4">
+                    <h3 class="font-dancing text-3xl font-bold text-center mb-4">${themes[i-2]}</h3>
+                    <div class="w-full h-64 bg-gradient-to-br from-rose/20 to-peach/20 rounded-xl flex items-center justify-center mb-4">
+                        <span class="text-8xl">${emojis[i-2]}</span>
+                    </div>
+                    <p class="text-center text-gray-700">Kỷ niệm đẹp của chúng ta</p>
+                </div>
+            `;
+            
+            document.body.appendChild(modal);
+        }
+        const musicPerfect = document.getElementById('musicPerfect');
+    const musicAllOfMe = document.getElementById('musicAllOfMe');
+
+    // Lấy các nút play/pause (tùy chọn)
+    const playPausePerfectBtn = document.getElementById('playPausePerfect');
+    const playPauseAllOfMeBtn = document.getElementById('playPauseAllOfMe');
+
+    let hasInteracted = false; // Biến cờ để kiểm tra tương tác người dùng ban đầu
+
+    // Hàm để phát nhạc đầu tiên (hoặc bất kỳ nhạc nào bạn muốn tự động phát)
+    function playFirstMusic() {
+        if (!hasInteracted) {
+            // Cố gắng phát nhạc Perfect
+            musicPerfect.play().then(() => {
+                console.log('Nhạc Perfect đã bắt đầu phát do tương tác cuộn.');
+                hasInteracted = true;
+                playPausePerfectBtn.textContent = '⏸️'; // Cập nhật nút
+                // Sau khi phát bài đầu, bạn có thể loại bỏ lắng nghe sự kiện cuộn
+                window.removeEventListener('scroll', playFirstMusic);
+            }).catch(error => {
+                console.log('Không thể tự động phát nhạc Perfect:', error.message);
+                // Nếu bị chặn, nút vẫn là ▶️
+            });
+        }
+    }
+
+    // Lắng nghe sự kiện cuộn trang
+    window.addEventListener('scroll', playFirstMusic);
+
+    // Xử lý nút Play/Pause (tùy chọn)
+    playPausePerfectBtn.addEventListener('click', () => {
+        if (musicPerfect.paused) {
+            musicPerfect.play();
+            playPausePerfectBtn.textContent = '⏸️';
+        } else {
+            musicPerfect.pause();
+            playPausePerfectBtn.textContent = '▶️';
+        }
+        hasInteracted = true; // Coi đây là một tương tác để có thể phát nhạc
+    });
+
+    playPauseAllOfMeBtn.addEventListener('click', () => {
+        if (musicAllOfMe.paused) {
+            musicAllOfMe.play();
+            playPauseAllOfMeBtn.textContent = '⏸️';
+        } else {
+            musicAllOfMe.pause();
+            playPauseAllOfMeBtn.textContent = '▶️';
+        }
+        hasInteracted = true; // Coi đây là một tương tác để có thể phát nhạc
+    });
+
+    // Cập nhật trạng thái nút khi nhạc dừng/phát bởi các yếu tố khác
+    musicPerfect.onpause = () => playPausePerfectBtn.textContent = '▶️';
+    musicPerfect.onplay = () => playPausePerfectBtn.textContent = '⏸️';
+    musicAllOfMe.onpause = () => playPauseAllOfMeBtn.textContent = '▶️';
+    musicAllOfMe.onplay = () => playPauseAllOfMeBtn.textContent = '⏸️';
+
+    // Đảm bảo chỉ một bài hát phát tại một thời điểm (tùy chọn)
+    musicPerfect.addEventListener('play', () => {
+        if (!musicAllOfMe.paused) musicAllOfMe.pause();
+    });
+    musicAllOfMe.addEventListener('play', () => {
+        if (!musicPerfect.paused) musicPerfect.pause();
+    });
+        
+    </script>
+ 
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96544e18f5ad03b3',t:'MTc1MzUzNzE4Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
