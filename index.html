@@ -321,8 +321,7 @@
                 white-space: normal !important;   /* BẮT BUỘC chữ phải xuống dòng */
                 word-break: break-word;         /* Tự động ngắt chữ nếu một từ quá dài */
                 border-right: none !important;    /* Bỏ dấu nháy của hiệu ứng typewriter */
-                width: auto !important;           /* Cho phép chiều rộng tự động */
-                animation: none !important;       /* Tắt hẳn hiệu ứng animation trên mobile */
+                width: auto !important;           /* Cho phép chiều rộng tự động */                       /
             }
 
             /* Chỉnh lại font-size cho tiêu đề trên mobile cho đẹp hơn */
@@ -344,7 +343,6 @@
     <audio id="backgroundMusic" loop>
         <source src="./EmDongYIDo-DucPhucx911-9034315.mp3" type="audio/mpeg"> 
     </audio>
-    <!-- Floating Hearts Background -->
     <div class="floating-hearts fixed inset-0 z-0">
         <div class="heart">💖</div>
         <div class="heart">💕</div>
@@ -352,12 +350,10 @@
         <div class="heart">💝</div>
     </div>
 
-    <!-- Hero Section -->
     <section class="hero-bg min-h-screen flex items-center justify-center relative overflow-hidden">
         <div class="absolute inset-0 bg-gradient-to-br from-rose/20 to-lavender/20"></div>
         <div class="container mx-auto px-4 text-center relative z-10">
             <div class="relative">
-                <!-- Sparkle Effects -->
                 <div class="sparkle" style="top: 10%; left: 15%; animation-delay: 0s;">✨</div>
                 <div class="sparkle" style="top: 20%; right: 20%; animation-delay: 0.5s;">⭐</div>
                 <div class="sparkle" style="bottom: 30%; left: 10%; animation-delay: 1s;">💫</div>
@@ -365,7 +361,6 @@
                 <div class="sparkle" style="top: 50%; left: 5%; animation-delay: 2s;">🌟</div>
                 <div class="sparkle" style="top: 60%; right: 8%; animation-delay: 2.5s;">✨</div>
                 
-                <!-- Couple Photo Placeholder -->
                 <div class="w-64 h-64 mx-auto mb-8 rounded-full overflow-hidden shadow-2xl rotating-border photo-glow animate-fade-in-up">
                     <svg viewBox="0 0 400 400" class="w-full h-full">
                         <defs>
@@ -375,12 +370,10 @@
                             </linearGradient>
                         </defs>
                         <rect width="400" height="400" fill="url(#coupleGrad)"/>
-                        <!-- Couple silhouette -->
                         <g fill="white" opacity="0.9">
                             <circle cx="160" cy="150" r="40"/>
                             <circle cx="240" cy="150" r="40"/>
                             <path d="M120 190 Q200 170 280 190 L280 350 Q200 330 120 350 Z"/>
-                            <!-- Heart between them -->
                             <path d="M200 200 C195 195, 185 195, 185 205 C185 195, 175 195, 170 205 C170 220, 200 240, 200 240 C200 240, 230 220, 230 205 C230 195, 220 195, 215 205 C215 195, 205 195, 200 200 Z" fill="#ff6b9d"/>
                         </g>
                     </svg>
@@ -402,7 +395,6 @@
             </div>
         </div>
         
-        <!-- Scroll indicator -->
         <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
             <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
@@ -410,7 +402,6 @@
         </div>
     </section>
 
-    <!-- Love Timeline -->
     <section id="timeline" class="py-20 bg-gradient-to-b from-white to-pink-50">
         <div class="container mx-auto px-4">
             <h2 class="font-dancing text-5xl font-bold text-center text-gray-800 mb-16 animate-fade-in-up">
@@ -418,7 +409,6 @@
             </h2>
             
             <div class="timeline-line max-w-6xl mx-auto animate-scale-in">
-                <!-- Timeline Item 1 -->
                 <div class="timeline-item grid md:grid-cols-2 gap-8 mb-16">
                     <div class="timeline-dot animate-bounce-in stagger-1"></div>
                     <div class="animate-slide-in-left stagger-2">
@@ -446,7 +436,6 @@
                     </div>
                 </div>
 
-                <!-- Timeline Item 2 -->
                 <div class="timeline-item grid md:grid-cols-2 gap-8 mb-16">
                     <div class="timeline-dot animate-bounce-in stagger-2"></div>
                     <div class="animate-slide-in-left stagger-3">
@@ -478,7 +467,6 @@
         </div>
     </section>
 
-    <!-- Things I Love About You -->
     <section class="py-20 bg-gradient-to-b from-pink-50 to-purple-50">
         <div class="container mx-auto px-4">
             <h2 class="font-dancing text-5xl font-bold text-center text-gray-800 mb-16 animate-fade-in-up">
@@ -486,7 +474,6 @@
             </h2>
             
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto animate-scale-in stagger-1">
-                <!-- Love Card 1 -->
                 <div class="love-card rounded-2xl p-6 transform hover:scale-105 transition-all duration-300 animate-bounce-in stagger-2">
                     <div class="w-full h-49 image-placeholder rounded-xl mb-4 flex items-center justify-center animate-scale-in stagger-3" style="background-image: url('data:image/svg+xml,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 400 300&quot;><defs><linearGradient id=&quot;smile&quot; x1=&quot;0%&quot; y1=&quot;0%&quot; x2=&quot;100%&quot; y2=&quot;100%&quot;><stop offset=&quot;0%&quot; style=&quot;stop-color:%23ff6b9d;stop-opacity:0.3&quot;/><stop offset=&quot;100%&quot; style=&quot;stop-color:%23fd79a8;stop-opacity:0.3&quot;/></linearGradient></defs><rect width=&quot;400&quot; height=&quot;300&quot; fill=&quot;url(%23smile)&quot;/><circle cx=&quot;200&quot; cy=&quot;120&quot; r=&quot;80&quot; fill=&quot;%23ffeb3b&quot; opacity=&quot;0.8&quot;/><circle cx=&quot;170&quot; cy=&quot;100&quot; r=&quot;8&quot; fill=&quot;%23333&quot;/><circle cx=&quot;230&quot; cy=&quot;100&quot; r=&quot;8&quot; fill=&quot;%23333&quot;/><path d=&quot;M160 140 Q200 170 240 140&quot; stroke=&quot;%23333&quot; stroke-width=&quot;4&quot; fill=&quot;none&quot;/></svg>');">
                         <img src="./hi_3.jpg" alt="Ngày trọng đại" class="w-full h-full object-cover rounded-lg">
@@ -497,7 +484,6 @@
                     </p>
                 </div>
 
-                <!-- Love Card 2 -->
                 <div class="love-card rounded-2xl p-6 transform hover:scale-105 transition-all duration-300 animate-scale-in stagger-3">
                     <div class="w-full h-49 image-placeholder rounded-xl mb-4 flex items-center justify-center animate-rotate-in stagger-4" style="background-image: url('data:image/svg+xml,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 400 300&quot;><defs><linearGradient id=&quot;care&quot; x1=&quot;0%&quot; y1=&quot;0%&quot; x2=&quot;100%&quot; y2=&quot;100%&quot;><stop offset=&quot;0%&quot; style=&quot;stop-color:%23a29bfe;stop-opacity:0.3&quot;/><stop offset=&quot;100%&quot; style=&quot;stop-color:%23ff6b9d;stop-opacity:0.3&quot;/></linearGradient></defs><rect width=&quot;400&quot; height=&quot;300&quot; fill=&quot;url(%23care)&quot;/><path d=&quot;M200 80 C190 70, 170 70, 170 90 C170 70, 150 70, 140 90 C140 120, 200 160, 200 160 C200 160, 260 120, 260 90 C260 70, 240 70, 230 90 C230 70, 210 70, 200 80 Z&quot; fill=&quot;%23ff6b9d&quot; opacity=&quot;0.7&quot;/></svg>');">
                        <img src="./hi_8.jpg" alt="Ngày trọng đại" class="w-full h-full object-cover rounded-lg">
@@ -508,7 +494,6 @@
                     </p>
                 </div>
 
-                <!-- Love Card 3 -->
                 <div class="love-card rounded-2xl p-6 transform hover:scale-105 transition-all duration-300 animate-flip-in stagger-4">
                     <div class="w-full h-49 image-placeholder rounded-xl mb-4 flex items-center justify-center animate-bounce-in stagger-5" style="background-image: url('data:image/svg+xml,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 400 300&quot;><defs><linearGradient id=&quot;angry&quot; x1=&quot;0%&quot; y1=&quot;0%&quot; x2=&quot;100%&quot; y2=&quot;100%&quot;><stop offset=&quot;0%&quot; style=&quot;stop-color:%23ffeaa7;stop-opacity:0.3&quot;/><stop offset=&quot;100%&quot; style=&quot;stop-color:%23a29bfe;stop-opacity:0.3&quot;/></linearGradient></defs><rect width=&quot;400&quot; height=&quot;300&quot; fill=&quot;url(%23angry)&quot;/><circle cx=&quot;200&quot; cy=&quot;120&quot; r=&quot;80&quot; fill=&quot;%23ff9ff3&quot; opacity=&quot;0.8&quot;/><path d=&quot;M160 100 L180 110 L160 120&quot; stroke=&quot;%23333&quot; stroke-width=&quot;3&quot; fill=&quot;none&quot;/><path d=&quot;M240 100 L220 110 L240 120&quot; stroke=&quot;%23333&quot; stroke-width=&quot;3&quot; fill=&quot;none&quot;/><circle cx=&quot;200&quot; cy=&quot;150&quot; r=&quot;15&quot; fill=&quot;%23ff6b9d&quot; opacity=&quot;0.6&quot;/></svg>');">
                         <img src="./hi.jpg" alt="Ngày trọng đại" class="w-full h-full object-cover rounded-lg">
@@ -519,7 +504,6 @@
                     </p>
                 </div>
 
-                <!-- Love Card 4 -->
                 <div class="love-card rounded-2xl p-6 transform hover:scale-105 transition-all duration-300 animate-slide-up stagger-5">
                     <div class="w-full h-49 image-placeholder rounded-xl mb-4 flex items-center justify-center animate-flip-in stagger-6" style="background-image: url('data:image/svg+xml,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 400 300&quot;><defs><linearGradient id=&quot;passion&quot; x1=&quot;0%&quot; y1=&quot;0%&quot; x2=&quot;100%&quot; y2=&quot;100%&quot;><stop offset=&quot;0%&quot; style=&quot;stop-color:%23fd79a8;stop-opacity:0.3&quot;/><stop offset=&quot;100%&quot; style=&quot;stop-color:%23ff6b9d;stop-opacity:0.3&quot;/></linearGradient></defs><rect width=&quot;400&quot; height=&quot;300&quot; fill=&quot;url(%23passion)&quot;/><rect x=&quot;150&quot; y=&quot;80&quot; width=&quot;100&quot; height=&quot;120&quot; fill=&quot;%23fff&quot; opacity=&quot;0.9&quot;/><circle cx=&quot;170&quot; cy=&quot;100&quot; r=&quot;8&quot; fill=&quot;%23ff6b9d&quot;/><circle cx=&quot;230&quot; cy=&quot;100&quot; r=&quot;8&quot; fill=&quot;%23a29bfe&quot;/><rect x=&quot;160&quot; y=&quot;120&quot; width=&quot;80&quot; height=&quot;4&quot; fill=&quot;%23ffeaa7&quot;/><rect x=&quot;160&quot; y=&quot;140&quot; width=&quot;60&quot; height=&quot;4&quot; fill=&quot;%23fd79a8&quot;/><rect x=&quot;160&quot; y=&quot;160&quot; width=&quot;70&quot; height=&quot;4&quot; fill=&quot;%23a29bfe&quot;/></svg>');">
                         <img src="./hi_7.jpg" alt="Ngày trọng đại" class="w-full h-full object-cover rounded-lg">
@@ -530,7 +514,6 @@
                     </p>
                 </div>
 
-                <!-- Love Card 5 -->
                 <div class="love-card rounded-2xl p-6 transform hover:scale-105 transition-all duration-300 animate-rotate-in stagger-6">
                     <div class="w-full h-49 image-placeholder rounded-xl mb-4 flex items-center justify-center animate-scale-in stagger-7" style="background-image: url('data:image/svg+xml,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 400 300&quot;><defs><linearGradient id=&quot;sleep&quot; x1=&quot;0%&quot; y1=&quot;0%&quot; x2=&quot;100%&quot; y2=&quot;100%&quot;><stop offset=&quot;0%&quot; style=&quot;stop-color:%23ff6b9d;stop-opacity:0.3&quot;/><stop offset=&quot;100%&quot; style=&quot;stop-color:%23ffeaa7;stop-opacity:0.3&quot;/></linearGradient></defs><rect width=&quot;400&quot; height=&quot;300&quot; fill=&quot;url(%23sleep)&quot;/><circle cx=&quot;100&quot; cy=&quot;80&quot; r=&quot;20&quot; fill=&quot;%23ffeaa7&quot; opacity=&quot;0.8&quot;/><circle cx=&quot;150&quot; cy=&quot;60&quot; r=&quot;15&quot; fill=&quot;%23ffeaa7&quot; opacity=&quot;0.6&quot;/><circle cx=&quot;200&quot; cy=&quot;70&quot; r=&quot;10&quot; fill=&quot;%23ffeaa7&quot; opacity=&quot;0.4&quot;/><ellipse cx=&quot;200&quot; cy=&quot;180&quot; rx=&quot;120&quot; ry=&quot;60&quot; fill=&quot;%23a29bfe&quot; opacity=&quot;0.4&quot;/><circle cx=&quot;200&quot; cy=&quot;160&quot; r=&quot;40&quot; fill=&quot;%23ffb3d9&quot; opacity=&quot;0.7&quot;/></svg>');">
                         <img src="./bau_1.jpg" alt="Ngày trọng đại" class="w-full h-full object-cover rounded-lg">
@@ -541,7 +524,6 @@
                     </p>
                 </div>
 
-                <!-- Love Card 6 -->
                 <div class="love-card rounded-2xl p-6 transform hover:scale-105 transition-all duration-300 animate-slide-down stagger-7">
                     <div class="w-full h-49 image-placeholder rounded-xl mb-4 flex items-center justify-center animate-bounce-in stagger-8" style="background-image: url('data:image/svg+xml,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 400 300&quot;><defs><linearGradient id=&quot;everything&quot; x1=&quot;0%&quot; y1=&quot;0%&quot; x2=&quot;100%&quot; y2=&quot;100%&quot;><stop offset=&quot;0%&quot; style=&quot;stop-color:%23a29bfe;stop-opacity:0.3&quot;/><stop offset=&quot;100%&quot; style=&quot;stop-color:%23fd79a8;stop-opacity:0.3&quot;/></linearGradient></defs><rect width=&quot;400&quot; height=&quot;300&quot; fill=&quot;url(%23everything)&quot;/><path d=&quot;M200 60 C190 50, 170 50, 170 70 C170 50, 150 50, 140 70 C140 100, 200 140, 200 140 C200 140, 260 100, 260 70 C260 50, 240 50, 230 70 C230 50, 210 50, 200 60 Z&quot; fill=&quot;%23ff6b9d&quot; opacity=&quot;0.8&quot;/><path d=&quot;M200 100 C195 95, 185 95, 185 105 C185 95, 175 95, 170 105 C170 120, 200 140, 200 140 C200 140, 230 120, 230 105 C230 95, 220 95, 215 105 C215 95, 205 95, 200 100 Z&quot; fill=&quot;%23ffeaa7&quot; opacity=&quot;0.8&quot;/><path d=&quot;M200 140 C195 135, 185 135, 185 145 C185 135, 175 135, 170 145 C170 160, 200 180, 200 180 C200 180, 230 160, 230 145 C230 135, 220 135, 215 145 C215 135, 205 135, 200 140 Z&quot; fill=&quot;%23fd79a8&quot; opacity=&quot;0.8&quot;/></svg>');">
                         <img src="./hi_4.jpg" alt="Ngày trọng đại" class="w-full h-full object-cover rounded-lg">
@@ -555,7 +537,6 @@
         </div>
     </section>
 
-    <!-- Photo Gallery -->
     <section class="py-20 bg-white">
         <div class="container mx-auto px-4">
             <h2 class="font-dancing text-5xl font-bold text-center text-gray-800 mb-16 animate-fade-in-up">
@@ -563,7 +544,6 @@
             </h2>
             
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-6xl mx-auto animate-scale-in stagger-1">
-                <!-- Gallery items -->
                 <div class="gallery-item aspect-square image-placeholder rounded-lg flex items-center justify-center animate-scale-in stagger-2 hover:animate-bounce" onclick="openModal('modal1')" style="background-image: url('data:image/svg+xml,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 300 300&quot;><defs><linearGradient id=&quot;beach&quot; x1=&quot;0%&quot; y1=&quot;0%&quot; x2=&quot;100%&quot; y2=&quot;100%&quot;><stop offset=&quot;0%&quot; style=&quot;stop-color:%23ff6b9d;stop-opacity:0.3&quot;/><stop offset=&quot;100%&quot; style=&quot;stop-color:%23fd79a8;stop-opacity:0.3&quot;/></linearGradient></defs><rect width=&quot;300&quot; height=&quot;300&quot; fill=&quot;url(%23beach)&quot;/><circle cx=&quot;80&quot; cy=&quot;80&quot; r=&quot;40&quot; fill=&quot;%23ffeaa7&quot; opacity=&quot;0.8&quot;/><path d=&quot;M0 200 Q150 180 300 200 L300 300 L0 300 Z&quot; fill=&quot;%2374b9ff&quot; opacity=&quot;0.6&quot;/><path d=&quot;M0 220 Q150 200 300 220 L300 300 L0 300 Z&quot; fill=&quot;%23ffeaa7&quot; opacity=&quot;0.4&quot;/></svg>');">
                     <img src="./bau4.jpg" alt="Ngày trọng đại" class="w-full h-full object-cover rounded-lg">
                 </div>
@@ -592,7 +572,6 @@
         </div>
     </section>
 
-    <!-- Love Letter & Surprise -->
     <section class="py-20 bg-gradient-to-br from-rose/10 to-lavender/10 relative overflow-hidden">
         <div class="absolute inset-0 bg-gradient-to-br from-rose/5 to-lavender/5 animate-fade-in-up"></div>
         <div class="container mx-auto px-4 relative z-10">
@@ -630,23 +609,11 @@
                         </p>
                     </div>
                     
-                    <!-- <div class="mt-12 pt-8 border-t border-gray-200 animate-bounce-in stagger-1">
-                        <p class="text-xl text-gray-600 mb-6 animate-fade-in-up stagger-2">
-                            Và... anh còn một bất ngờ nho nhỏ nữa dành cho em...
-                            <span class="inline-block animate-float ml-2">🎁</span>
-                        </p>
-                        
-                        <button onclick="showSurprise()" class="surprise-btn text-white px-10 py-4 rounded-full text-xl font-bold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 animate-bounce-in stagger-3">
-                            Nhận Quà Ngay! 
-                            <span class="inline-block animate-heart-beat ml-2">🎁</span>
-                        </button>
-                    </div> -->
-                </div>
+                    </div>
             </div>
         </div>
     </section>
 
-    <!-- Modals for Gallery -->
     <div id="modal1" class="modal" onclick="closeModal('modal1')">
         <div class="bg-white rounded-2xl p-8 max-w-2xl mx-4">
             <h3 class="font-dancing text-3xl font-bold text-center mb-4">Chuyến Đi Biển</h3>
@@ -656,21 +623,6 @@
             <p class="text-center text-gray-700">Kỷ niệm tuyệt vời ở bãi biển Nha Trang</p>
         </div>
     </div>
-
-    <!-- Surprise Modal -->
-    <!-- <div id="surpriseModal" class="modal">
-        <div class="bg-white rounded-3xl p-12 max-w-2xl mx-4 text-center">
-            <div class="text-8xl mb-6">🎉</div>
-            <h3 class="font-dancing text-4xl font-bold text-rose mb-6">Bất Ngờ Dành Cho Em!</h3>
-            <p class="text-xl text-gray-700 mb-8">
-                Tối nay anh đã đặt bàn ở nhà hàng yêu thích của chúng ta, 7 giờ mình đi nhé! 
-                Và đừng quên nhìn vào hộp quà trên bàn đi em yêu! 😘
-            </p>
-            <button onclick="closeModal('surpriseModal')" class="bg-gradient-to-r from-rose to-peach text-white px-8 py-3 rounded-full font-semibold">
-                Đóng ❤️
-            </button>
-        </div>
-    </div> -->
 
     <script>
         // Smooth scroll to timeline
